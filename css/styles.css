@@ -243,15 +243,18 @@ ul {
 .team-member {
   color: var(--title-text-color);
 
+  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  padding: 0;
+  padding: 0 auto;
   margin: 0;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
 .team-position {
+  font-family: Roboto;
   font-size: 16px;
   line-height: 1.19;
   padding: 0;
@@ -259,6 +262,15 @@ ul {
   margin-bottom: 30px;
 }
 
+.team-item {
+  text-align: center;
+  margin-right: 30px;
+  width: 270px;
+  background: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team {
   background-color: var(--background-team);
 }
@@ -392,15 +404,25 @@ ul {
   line-height: 2;
   margin: 0;
   margin-top: 20px;
+  margin-left: 24px;
 }
 .projects a {
   text-decoration: none;
 }
+
 .projects-text {
   margin: 0;
   margin-top: 4px;
+  margin-left: 24px;
+  margin-bottom: 20px;
   color: var(--primary-text-color);
 
   font-size: 16px;
   line-height: 1.87;
+}
+
+.project-item {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
