@@ -16,12 +16,10 @@
 .container-nav {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  width: 1170px;
+  width: 1200px;
   outline: 2px solid orange;
 }
 
@@ -62,6 +60,11 @@ body {
 ul {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
 }
 
 h1,
@@ -73,7 +76,9 @@ h5 {
 }
 .site-nav .link {
   color: var(--title-text-color);
-
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -141,6 +146,21 @@ h5 {
   background-color: var(--accent-color);
 }
 
+.features-container {
+  width: 1200px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid orange;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .features-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -162,32 +182,18 @@ h5 {
   margin-right: 30px;
 }
 
-.features-list {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 2px solid orange;
-  margin: 0 auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  display: flex;
-}
-
 .features-list .item {
   width: 270px;
 }
 
-.activity {
+.container-activity {
+  width: 1200px;
   margin: 0 auto;
-  padding-bottom: 94px;
-  width: 1170px;
-  outline: 2px solid orange;
   padding-left: 15px;
   padding-right: 15px;
-}
 
+  outline: 2px solid orange;
+}
 .activity-title {
   color: var(--title-text-color);
 
@@ -201,6 +207,7 @@ h5 {
 .activity-list {
   display: flex;
   padding: 0;
+  margin: 0;
 }
 
 .activity-item {
@@ -212,12 +219,10 @@ h5 {
 
 .container-team {
   margin: 0 auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  width: 1170px;
-  outline: 2px solid orange;
   padding-left: 15px;
   padding-right: 15px;
+  width: 1200px;
+  outline: 2px solid orange;
 }
 .team-title {
   margin: 0;
@@ -234,10 +239,11 @@ h5 {
 .team-list {
   display: flex;
 }
-.team-img {
-  margin-bottom: 30px;
-}
 
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-member {
   color: var(--title-text-color);
 
@@ -247,7 +253,6 @@ h5 {
   line-height: 1.19;
   padding: 0 auto;
   margin: 0;
-  /* margin-top: 30px; */
   margin-bottom: 10px;
 }
 
@@ -257,12 +262,11 @@ h5 {
   line-height: 1.19;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
 }
 
 .team-item {
   text-align: center;
-  /* margin-right: 30px; */
+
   width: 270px;
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -288,7 +292,7 @@ h5 {
 
 .footer-container {
   margin: 0 auto;
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid orange;
@@ -312,8 +316,11 @@ h5 {
   font-size: 14px;
   line-height: 1.17;
   text-decoration: none;
-  margin-top: 20px;
   display: block;
+}
+
+.footer-address {
+  margin-top: 20px;
 }
 
 .footer-address .link {
@@ -322,9 +329,13 @@ h5 {
   font-style: normal;
   font-size: 14px;
   line-height: 1.17;
+
   text-decoration: none;
-  margin-top: 9px;
   display: block;
+}
+
+.footer-item {
+  margin-top: 9px;
 }
 
 .footer-address .link:hover,
@@ -367,14 +378,14 @@ h5 {
 
 .container-projects {
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
 
   margin-right: auto;
   margin-left: auto;
 
-  width: 1170px;
+  width: 1200px;
   outline: 2px solid orange;
 }
 
@@ -386,7 +397,6 @@ h5 {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  width: 1170px;
 }
 
 .project-item {
@@ -422,7 +432,6 @@ h5 {
   font-size: 18px;
   line-height: 2;
   margin: 0;
-  /* margin-left: 24px; */
 }
 .projects a {
   text-decoration: none;
@@ -431,15 +440,8 @@ h5 {
 .projects-text {
   margin: 0;
   margin-top: 4px;
-  /* margin-left: 24px; */
   color: var(--primary-text-color);
 
   font-size: 16px;
   line-height: 1.87;
 }
-
-/* .project-item {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-} */
